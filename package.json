@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@alita/flow": "3.0.0-beta.3",
+    "@alita/react": "^0.1.1",
     "alita": "3.0.0-beta.13",
     "antd-mobile-icons": "^0.2.2"
   },

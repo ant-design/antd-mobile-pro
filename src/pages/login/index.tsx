@@ -1,4 +1,4 @@
-import { Content, Header, Page } from '@alita/react';
+import { Content, Header, Page } from '@alita/flow';
 import { history, Link, setPageNavBar, useLocation } from 'alita';
 import { Button, Form, Input, NavBar, Popup, Space, Toast } from 'antd-mobile';
 import { EyeFill, EyeInvisibleOutline } from 'antd-mobile-icons';
@@ -10,6 +10,7 @@ import { login } from './service';
 
 interface LoginPageProps {}
 
+// TODO: 小竖线随便写的，mobile5 里面添加了需求
 const LoginPage: FC<LoginPageProps> = () => {
   const { pathname, search } = useLocation();
   const [visible, setVisible] = useState(false);

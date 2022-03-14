@@ -12,7 +12,7 @@ export default {
   'POST /api/login/account': async (req: Request, res: Response) => {
     const { password, username } = req.body;
     await waitTime(2000);
-    if (password === 'xiaohuoni' && username === 'mobile') {
+    if (password === 'xiaohuoni' && username === 'antd.mobile') {
       res.send({
         message: 'ok',
         success: true,

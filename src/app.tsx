@@ -1,9 +1,8 @@
-import HomeGary from '@/assets/demoIcon/home.png';
-import HomeBlue from '@/assets/demoIcon/home1.png';
-import ListGary from '@/assets/demoIcon/list.png';
-import ListBlue from '@/assets/demoIcon/list1.png';
-import SetGary from '@/assets/demoIcon/setting.png';
-import SetBlue from '@/assets/demoIcon/setting1.png';
+import life from '@/assets/demoIcon/life.png';
+import MessageOutline from '@/assets/demoIcon/MessageOutline.png';
+import Pay from '@/assets/demoIcon/pay.png';
+import PayCircleOutline from '@/assets/demoIcon/PayCircleOutlined.png';
+import UserOutlined from '@/assets/demoIcon/UserOutline.png';
 import type {
   Context,
   NavBarListItem,
@@ -67,27 +66,27 @@ const navBar: NavBarProps = {
 const tabList: TabBarListItem[] = [
   {
     pagePath: '/',
-    text: '首页',
-    iconPath: HomeGary,
-    selectedIconPath: HomeBlue,
-    title: '首页',
+    text: '',
+    iconPath: Pay,
+    selectedIconPath: Pay,
+    title: '',
     iconSize: '',
     badge: '',
   },
   {
     pagePath: '/property',
-    text: '资产',
-    iconPath: HomeGary,
-    selectedIconPath: HomeBlue,
-    title: '资产',
+    text: '理财',
+    iconPath: PayCircleOutline,
+    selectedIconPath: PayCircleOutline,
+    title: '理财',
     iconSize: '',
     badge: '',
   },
   {
     pagePath: '/life',
     text: '生活',
-    iconPath: HomeGary,
-    selectedIconPath: HomeBlue,
+    iconPath: life,
+    selectedIconPath: life,
     title: '生活',
     iconSize: '',
     badge: '',
@@ -95,17 +94,17 @@ const tabList: TabBarListItem[] = [
   {
     pagePath: '/message',
     text: '消息',
-    iconPath: ListGary,
-    selectedIconPath: ListBlue,
+    iconPath: MessageOutline,
+    selectedIconPath: MessageOutline,
     title: '消息',
     iconSize: '',
-    badge: '',
+    badge: '12',
   },
   {
     pagePath: '/my',
     text: '我的',
-    iconPath: SetGary,
-    selectedIconPath: SetBlue,
+    iconPath: UserOutlined,
+    selectedIconPath: UserOutlined,
     title: '我的',
     iconSize: '',
     badge: '',
@@ -114,7 +113,7 @@ const tabList: TabBarListItem[] = [
 
 const tabBar: TabBarProps = {
   color: `#999999`,
-  selectedColor: '#00A0FF',
+  selectedColor: '#1a79fb',
   borderStyle: 'white',
   position: 'bottom',
   list: tabList,

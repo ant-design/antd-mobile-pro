@@ -1,16 +1,23 @@
 import { Content, Header, Page } from '@alita/flow';
 import { history, Link, setPageNavBar, useLocation } from 'alita';
-import { Button, Form, Input, NavBar, Popup, Space, Toast } from 'antd-mobile';
+import {
+  Button,
+  Divider,
+  Form,
+  Input,
+  NavBar,
+  Popup,
+  Space,
+  Toast,
+} from 'antd-mobile';
 import { EyeFill, EyeInvisibleOutline } from 'antd-mobile-icons';
 import { parse } from 'querystring';
 import type { FC } from 'react';
 import React, { useEffect, useState } from 'react';
-import styles from './index.less';
 import { login } from './service';
 
 interface LoginPageProps {}
 
-// TODO: 小竖线随便写的，mobile5 里面添加了需求
 const LoginPage: FC<LoginPageProps> = () => {
   const { pathname, search } = useLocation();
   const [visible, setVisible] = useState(false);
@@ -57,7 +64,6 @@ const LoginPage: FC<LoginPageProps> = () => {
         content: '登录失败，请重试',
         duration: 1000,
       });
-      console.log(msg);
     } catch (error) {
       setIsLogin(false);
       Toast.show({
@@ -125,7 +131,9 @@ const LoginPage: FC<LoginPageProps> = () => {
           extra={
             <Space>
               {eyeFill && <EyeFill onClick={() => setEyeFill(false)} />}
-              {!eyeFill && <EyeInvisibleOutline onClick={() => setEyeFill(true)} />}
+              {!eyeFill && (
+                <EyeInvisibleOutline onClick={() => setEyeFill(true)} />
+              )}
               <span
                 style={{
                   border: '1px solid gray',
@@ -154,19 +162,13 @@ const LoginPage: FC<LoginPageProps> = () => {
       </Form>
       <Space>
         <Link to="">注册账号</Link>
-        <span
-          style={{
-            border: '1px solid gray',
-            height: '16px',
-            verticalAlign: 'bottom',
-          }}
-        ></span>
+        <Divider direction="vertical" />
         <Link to="">找回账号</Link>
       </Space>
     </div>
   );
   return (
-    <Page className={styles.center}>
+    <Page>
       <Header>
         <NavBar right={right} onBack={back} backArrow={step === 2} />
       </Header>
@@ -181,8 +183,16 @@ const LoginPage: FC<LoginPageProps> = () => {
           }}
         >
           <div style={{ textAlign: 'center' }}>
-            <p className={styles.title}>便携生活 一点就好</p>
-            <p className={styles.subTitle}>你好，欢迎使用支付宝</p>
+            <p style={{ fontWeight: 900, fontSize: '0.45rem' }}>
+              便携生活 一点就好
+            </p>
+            <p
+              style={{
+                fontSize: '0.24rem',
+              }}
+            >
+              你好，欢迎使用支付宝
+            </p>
           </div>
           {!visible && mockContent}
         </div>

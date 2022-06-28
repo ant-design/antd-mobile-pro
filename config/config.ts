@@ -7,7 +7,7 @@ export default defineConfig({
     console: {},
     inspx: {},
   },
-  mobileLayout: 'mobile5',
+  mobileLayout: true,
   mfsu: {},
   hash: false,
 });

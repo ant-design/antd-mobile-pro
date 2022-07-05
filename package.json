@@ -9,6 +9,11 @@
     "lint": "alita lint",
     "lint-staged": "lint-staged",
     "lint-staged:js": "",
+    "lint:cssinjs": "alita lint --stylelint-only --cssinjs",
+    "lint:es": "alita lint --eslint-only",
+    "lint:es-fix": "alita lint --eslint-only --fix",
+    "lint:style": "alita lint --stylelint-only",
+    "lint:style-fix": "alita lint --stylelint-only --fix",
     "plugin": "alita plugin list",
     "start": "alita dev"
   },
@@ -21,7 +26,7 @@
   },
   "dependencies": {
     "@alita/flow": "^3.0.0",
-    "alita": "^3.0.3",
+    "alita": "^3.0.7",
     "antd-mobile": "^5.16.1",
     "antd-mobile-icons": "^0.2.2"
   },

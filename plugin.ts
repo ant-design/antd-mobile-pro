@@ -1,10 +1,10 @@
-import { IApi } from 'umi';
+import { AlitaApi } from 'alita';
 
-export default (api: IApi) => {
-  api.onDevCompileDone((opts) => {
+export default (api: AlitaApi) => {
+  api.onDevCompileDone(() => {
     // console.log('> onDevCompileDone', opts.isFirstCompile);
   });
-  api.onBuildComplete((opts) => {
+  api.onBuildComplete(() => {
     // console.log('> onBuildComplete', opts.isFirstCompile);
   });
 };

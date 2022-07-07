@@ -13,12 +13,10 @@ import {
 import { EyeFill, EyeInvisibleOutline } from 'antd-mobile-icons';
 import { parse } from 'querystring';
 import type { FC } from 'react';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { login } from './service';
 
-interface LoginPageProps {}
-
-const LoginPage: FC<LoginPageProps> = () => {
+const LoginPage: FC = () => {
   const { pathname, search } = useLocation();
   const [visible, setVisible] = useState(false);
   const [isLogin, setIsLogin] = useState(false);

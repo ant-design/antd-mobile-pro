@@ -54,6 +54,6 @@
   ],
   "gitHooks": {
     "pre-commit": "lint-staged",
-    "commit-msg": "alita verify-commit process.env.GIT_PARAMS"
+    "commit-msg": "alita version verify-commit 'fix: commit error https://github.com/umijs/umi/pull/8457'"
   }
 }

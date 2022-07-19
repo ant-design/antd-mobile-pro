@@ -1,3 +1,3 @@
 module.exports = {
-  extends: require.resolve('alita/stylelint')
-}
+  extends: require.resolve('alita/stylelint'),
+};

@@ -1,6 +1,14 @@
 node_modules
 .umi
 .umi-production
-dist
-*.md
-*.yaml
+*.png
+*.jpg
+*.svg
+.editorconfig
+.env
+.prettierignore
+.gitkeep
+.DS_Store
+.npmrc
+.eslintignore
+.gitignore

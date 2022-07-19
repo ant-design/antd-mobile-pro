@@ -8,7 +8,7 @@
 
 ![](https://badgen.net/badge/icon/Ant%20Design?icon=https://gw.alipayobjects.com/zos/antfincdn/Pp4WPgVDB3/KDpgvguMpGfqaHPjicRK.svg&label)
 
- [演示图片]
+[演示图片]
 
 </div>
 
